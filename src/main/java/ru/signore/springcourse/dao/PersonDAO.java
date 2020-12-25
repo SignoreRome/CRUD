@@ -7,6 +7,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+//помечаем @Componen чтобы Spring создал bean на основе данного класса и для внедрения в контроллер
 @Component
 public class PersonDAO {
     private static int PEOPLE_COUNT;

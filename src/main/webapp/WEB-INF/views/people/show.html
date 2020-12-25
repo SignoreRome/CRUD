@@ -1,10 +1,14 @@
 <!DOCTYPE html>
+<!--подключение thymeleaf-->
 <html lang="en" xmlns:th="http://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Person</title>
 </head>
 <body>
+<!--переход в результате выполнения метода show(id)-->
+<!--для конректного человека будем отображать его данные-->
+<!--таймлиф будет динамически вставлять значение th:text вместо VALUE-->
 <p th:text="${person.getName()}">VALUE</p>
 <p th:text="${person.getId()}">VALUE</p>
 <p th:text="${person.getAge()}">VALUE</p>
